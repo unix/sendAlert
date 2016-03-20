@@ -3,7 +3,7 @@
 sendAlert的功能足够简单,同时也足够小(1-2kb).可以尝试改写css文件达到想要的样式.
 
 ###DEMO  
-[demo](http://wittsay.cc/notebook/demo/cool-scroll/)
+[demo](http://wittsay.cc/notebook/demo/send-alert/)
 ###起步
 通过*bower*安装插件:  
 	`bower install send-alert --save`
