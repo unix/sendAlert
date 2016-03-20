@@ -1,0 +1,86 @@
+.send-alert > .send-alert-bg {
+  display: none;
+  background-color: rgba(150, 149, 149, 0.7);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1999; }
+  .send-alert > .send-alert-bg.change {
+    display: block; }
+.send-alert > .send-alert-content {
+  display: none;
+  position: fixed;
+  -webkit-transition: all, 0.4s;
+  -o-transition: all, 0.4s;
+  transition: all, 0.4s;
+  width: 100%;
+  height: 88%;
+  opacity: 0;
+  left: 0;
+  bottom: 0;
+  z-index: 2000; }
+  .send-alert > .send-alert-content.change {
+    display: block; }
+  .send-alert > .send-alert-content.show {
+    height: 78%;
+    opacity: 1; }
+  .send-alert > .send-alert-content.two button.left {
+    margin: 0 auto;
+    display: block;
+    float: left; }
+  .send-alert > .send-alert-content.two button.right {
+    float: right;
+    display: block; }
+  .send-alert > .send-alert-content.title > .send-alert-group > h2 {
+    padding-bottom: 30px; }
+  .send-alert > .send-alert-content.title > .send-alert-group > p {
+    display: none; }
+
+.send-alert-group {
+  width: 400px;
+  height: auto;
+  margin: 0 auto;
+  background-color: #FFF;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  position: relative;
+  padding: 45px 40px 0 40px;
+  overflow: hidden;
+  color: #616161; }
+  .send-alert-group > h2 {
+    font-size: 25px;
+    font-weight: 600;
+    text-align: center;
+    line-height: 25px; }
+  .send-alert-group > p {
+    font-size: 16px;
+    line-height: 23px;
+    padding: 30px 0; }
+  .send-alert-group > .send-alert-group-btn {
+    width: 60%;
+    margin: 20px auto;
+    overflow: hidden; }
+  .send-alert-group button {
+    background-color: #00b3ee;
+    padding: 8px 25px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    border: none;
+    font-size: 14px;
+    color: #FFF; }
+    .send-alert-group button.left {
+      margin: 0 auto;
+      display: block;
+      float: none; }
+    .send-alert-group button.right {
+      display: none; }
+
+
+
+/*# sourceMappingURL=../css/alert.css.map */

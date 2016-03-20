@@ -1,0 +1,27 @@
+{
+  "name": "send-alert",
+  "version": "1.0.0",
+  "description": "敏捷,优雅的弹框插件",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/WittBulter/sendAlert.git"
+  },
+  "author": "WittBulter (nanazuimeng123@gmail.com)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/WittBulter/sendAlert/issues"
+  },
+  "homepage": "https://github.com/WittBulter/sendAlert#readme",
+  "dependencies": {},
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-rename": "^1.2.2",
+    "gulp-ruby-sass": "^2.0.6",
+    "gulp-sourcemaps": "^1.6.0",
+    "gulp-uglify": "^1.5.3"
+  }
+}

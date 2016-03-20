@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>sendAlert</title>
+    <link rel="stylesheet" href="./src/css/index.css"/>
+    <link rel="stylesheet" href="./src/css/alert.css"/>
+    <script src="./src/js/sendAlert.js"></script>
+</head>
+<body>
+<nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="https://github.com/WittBulter/sendAlert" target="_blank">GITHUB</a>
+        </div>
+    </div>
+</nav>
+
+<div class="jumbotron">
+    <h1>sendAlert!</h1>
+    <p>敏捷,优雅的弹框插件</p>
+</div>
+
+<div class="container">
+    <div class="row">
+        <div class=".col-md-8 .center">
+            <div class=" panel panel-success">
+                <div class="panel-heading">
+                    <h3 class="panel-title">弹出一个普通提示</h3>
+                </div>
+                <div class="panel-body">
+                   在合适的地方使用 <kbd>sendAlert('删除成功')</kbd> 或 <kbd>seal('删除成功')</kbd>
+                    <button type="button" class="btn btn-default fr" onclick="seal('删除成功')">尝试</button>
+                </div>
+            </div>
+        </div>
+        <div class=".col-md-8 .center">
+            <div class=" panel panel-success">
+                <div class="panel-heading">
+                    <h3 class="panel-title">带有回调函数提示框</h3>
+                </div>
+                <div class="panel-body">
+                    <p><kbd>sendAlert()</kbd>第二个参数是一个回调函数,点击确认后将执行它</p>
+                    使用 <kbd>sendAlert('打印字符串',function(){console.log('ok')})</kbd>
+                    <button type="button" class="btn btn-default fr" onclick="seal('打印字符串',function(){console.log('ok')})">尝试</button>
+                </div>
+            </div>
+        </div>
+        <div class=".col-md-8 .center">
+            <div class=" panel panel-success">
+                <div class="panel-heading">
+                    <h3 class="panel-title">可以取消的提示框</h3>
+                </div>
+                <div class="panel-body">
+                    <p><kbd>sendAlert()</kbd>最后一个参数是一个布尔值,传入真值将加入一个取消按钮</p>
+                    <p>确定或取消的布尔值将在回调函数的参数中返回</p>
+                    使用 <kbd>sendAlert('确认或者取消..',function(t){console.log(t)},1)</kbd>
+                    <button type="button" class="btn btn-default fr" onclick="seal('确认或者取消..',function(t){console.log(t)},1)">尝试</button>
+                 </div>
+            </div>
+        </div>
+        <div class=".col-md-8 .center">
+            <div class=" panel panel-success">
+                <div class="panel-heading">
+                    <h3 class="panel-title">携带更多的提示信息</h3>
+                </div>
+                <div class="panel-body">
+                    <p>如果有更多信息可以将第一个参数改为数组</p>
+                    如 <kbd>sendAlert(['服务器信息','您的帐号已被注销..'],function(t){console.log(t)},1)</kbd>
+                    <button type="button" class="btn btn-default fr" onclick="seal(['服务器信息','您的帐号已被注销..'],function(t){console.log(t)},1)">尝试</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<footer>
+    <div class="container">
+        <p>本项目源码遵循 MIT开源协议</p>
+    </div>
+</footer>
+</body>
+</html>
