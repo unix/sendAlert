@@ -40,7 +40,7 @@
                 </div>
                 <div class="panel-body">
                     <p><kbd>sendAlert()</kbd>第二个参数是一个回调函数,点击确认后将执行它</p>
-                    使用 <kbd>sendAlert('打印字符串',function(){console.log('ok')})</kbd>
+                    使用 <kbd>seal('打印字符串',function(){console.log('ok')})</kbd>
                     <button type="button" class="btn btn-default fr" onclick="seal('打印字符串',function(){console.log('ok')})">尝试</button>
                 </div>
             </div>
@@ -53,7 +53,7 @@
                 <div class="panel-body">
                     <p><kbd>sendAlert()</kbd>最后一个参数是一个布尔值,传入真值将加入一个取消按钮</p>
                     <p>确定或取消的布尔值将在回调函数的参数中返回</p>
-                    使用 <kbd>sendAlert('确认或者取消..',function(t){console.log(t)},1)</kbd>
+                    使用 <kbd>seal('确认或者取消..',function(t){console.log(t)},1)</kbd>
                     <button type="button" class="btn btn-default fr" onclick="seal('确认或者取消..',function(t){console.log(t)},1)">尝试</button>
                  </div>
             </div>
@@ -65,7 +65,7 @@
                 </div>
                 <div class="panel-body">
                     <p>如果有更多信息可以将第一个参数改为数组</p>
-                    如 <kbd>sendAlert(['服务器信息','您的帐号已被注销..'],function(t){console.log(t)},1)</kbd>
+                    如 <kbd>seal(['服务器信息','您的帐号已被注销..'],function(t){console.log(t)},1)</kbd>
                     <button type="button" class="btn btn-default fr" onclick="seal(['服务器信息','您的帐号已被注销..'],function(t){console.log(t)},1)">尝试</button>
                 </div>
             </div>
