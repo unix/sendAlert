@@ -74,11 +74,11 @@
     addEvent = function (t,callback) {
         var newEvent = function (e) {
             e.stopPropagation();
-            if (e.srcElement.className === 'left') {
+            if (e.target.className === 'left') {
                 windowClose(t ? callback : '', true);
                 sendAlertDOM.div.removeEventListener('click',newEvent);
             }
-            if (e.srcElement.className === 'right') {
+            if (e.target.className === 'right') {
                 windowClose(t ? callback : '', false);
                 sendAlertDOM.div.removeEventListener('click',newEvent);
             }
