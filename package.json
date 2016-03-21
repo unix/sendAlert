@@ -1,6 +1,6 @@
 {
   "name": "send-alert",
-  "version": "1.0.1",
+  "version": "1.0.3",
   "description": "敏捷,优雅的弹框插件",
   "main": "index.js",
   "scripts": {
