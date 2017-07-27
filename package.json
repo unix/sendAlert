@@ -1,7 +1,7 @@
 {
   "name": "send-alert",
   "version": "1.0.3",
-  "description": "敏捷,优雅的弹框插件",
+  "description": "alert",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
