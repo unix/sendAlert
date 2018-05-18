@@ -36,7 +36,7 @@
         sendAlertDOM.content.classList.add('title')
         return open()
       }
-      if (Array.isArray(tet)) {
+      if (Array.isArray(txt)) {
         sendAlertDOM.content.classList.remove('title')
         sendAlertDOM.title.innerHTML = txt[0]
         sendAlertDOM.detail.innerHTML = txt[1]
@@ -71,16 +71,12 @@
       }
       sendAlertDOM.div.addEventListener('click', handle)
     }
-    const seal = (text, done, close) => {
-      const callbackToggle = Object(done) === done
-      isNullObj(sendAlertDOM) && _createDOM()
-      updateDOM(text, close || null)
-      addEvent(callbackToggle, done)
+  const seal = (text, done, close) => {
+    const callbackToggle = Object(done) === done
+    isNullObj(sendAlertDOM) && _createDOM()
+    updateDOM(text, close || null)
+    addEvent(callbackToggle, done)
   }
   return seal
 }, typeof window !== 'undefined' ? window : this, document)
-
-
-
-
 
