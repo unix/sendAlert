@@ -71,16 +71,12 @@
       }
       sendAlertDOM.div.addEventListener('click', handle)
     }
-    const seal = (text, done, close) => {
-      const callbackToggle = Object(done) === done
-      isNullObj(sendAlertDOM) && _createDOM()
-      updateDOM(text, close || null)
-      addEvent(callbackToggle, done)
+  const seal = (text, done, close) => {
+    const callbackToggle = Object(done) === done
+    isNullObj(sendAlertDOM) && _createDOM()
+    updateDOM(text, close || null)
+    addEvent(callbackToggle, done)
   }
   return seal
 }, typeof window !== 'undefined' ? window : this, document)
-
-
-
-
 
